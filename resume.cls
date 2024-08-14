@@ -71,8 +71,12 @@
   \vspace{1.2ex}
 }
 
-\newcommand{\contactInfo}[2]{
-\centerline{\sffamily\large{\ 手机：{#1} \textperiodcentered\ \ 邮箱：{#2}}}
+\newcommand{\contactInfo}[3]{
+\begin{tabular}{@{}l@{}}
+\sffamily\large{手机：{#1}} \\
+\sffamily\large{邮箱：{#2}} \\
+\sffamily\large{政治面貌：{#3}}
+\end{tabular}
 \vspace{1.2ex}
 }
 
