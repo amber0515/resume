@@ -66,10 +66,17 @@
   {\par #1 \hfill #2 \par}%
 }
 
+% \newcommand{\name}[1]{
+%   \centerline{\Huge\scshape{#1}}
+%   \vspace{1.2ex}
+% }
+
 \newcommand{\name}[1]{
-  \centerline{\Huge\scshape{#1}}
-  \vspace{1.2ex}
+  \noindent{\LARGE\bfseries{#1}} % 左对齐，使用大号粗体字体
+  \par\vspace{1.2ex} % 添加一些空间
+  % \noindent\rule{\linewidth}{0.4pt} % 在名字下方添加一条细线
 }
+
 
 \newcommand{\contactInfo}[3]{
 \begin{tabular}{@{}l@{}}

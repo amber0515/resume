@@ -5,11 +5,19 @@
 \documentclass{resume}
 \usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
 %\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{graphicx} % 插入图片的宏包
+\usepackage[absolute,overlay]{textpos} % 允许在页面的绝对位置放置内容
 \usepackage{linespacing_fix} % disable extra space before next section
 \usepackage{cite}
 
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
+
+% 在页面的右上角插入照片
+\begin{textblock*}{30mm}(150mm,3mm) % 调整这里的坐标 (x,y) 和大小 (宽度)
+  \includegraphics[width=30mm]{head_photo.jpg} % 照片的文件名
+\end{textblock*}
+
 
 \name{安澜霆 Amber}
 
